@@ -1,12 +1,12 @@
 import Head from "next/head";
 
-export async function getServerSideProps({ query }) {
+export async function getServerSideProps({ query }: any) {
   return {
     props: { ...query }, // will be passed to the page component as props
   };
 }
 
-export default function Home(props) {
+export default function Home(props: any) {
   return (
     <>
       <Head>
